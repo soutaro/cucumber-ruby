@@ -2,7 +2,6 @@ require 'spec_helper'
 require 'cucumber/formatter/spec_helper'
 require 'cucumber/formatter/pretty'
 require 'cucumber/cli/options'
-require 'unicode'
 
 module Cucumber
   module Formatter
