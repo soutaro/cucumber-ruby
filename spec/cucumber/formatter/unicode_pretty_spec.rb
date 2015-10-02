@@ -31,11 +31,13 @@ module Cucumber
           FEATURE
 
           it "displays the multiline string" do
+            run_defined_feature
+            
             expect(@out.string).to include <<OUTPUT
-            Given there are monkeys:
-              | 名前     |
-              | キュウリ |
-              | Cucumber |
+    Given there are monkeys:
+      | 名前     |
+      | キュウリ |
+      | Cucumber |
 OUTPUT
           end
         end
@@ -59,9 +61,9 @@ OUTPUT
             run_defined_feature
 
             expect(@out.string).to include <<OUTPUT
-            Given there are monkeys:
-              | ∀     |
-              | forall |
+    Given there are monkeys:
+      | ∀     |
+      | forall |
 OUTPUT
           end
 
@@ -70,9 +72,9 @@ OUTPUT
             run_defined_feature
 
             expect(@out.string).to include <<OUTPUT
-            Given there are monkeys:
-              | ∀      |
-              | forall |
+    Given there are monkeys:
+      | ∀      |
+      | forall |
 OUTPUT
           end
         end
